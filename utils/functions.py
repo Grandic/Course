@@ -53,4 +53,3 @@ def main_function():
                         print(f'{hide_card(i["from"])} -> {hide_card(i["to"])}')
                     print(operation)
                     print()
-
