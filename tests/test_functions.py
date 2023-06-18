@@ -14,8 +14,8 @@ def test_hide_card():
     assert hide_card("Visa Platinum 1246377376343588") == "Visa Platinum 1246 37** **** 3588"
     assert hide_card("Счет 90424923579946435907") == "Счет **5907"
 
-def test_five_operations():
-    assert five_operations(load_json()) == ['2019-12-08T22:46:21.935582',
+def test_five_operations(coll):
+    assert five_operations(coll) == ['2019-12-08T22:46:21.935582',
                                             '2019-12-07T06:17:14.634890',
                                             '2019-11-19T09:22:25.899614',
                                             '2019-11-13T17:38:04.800051',
